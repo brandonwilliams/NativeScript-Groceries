@@ -9,7 +9,7 @@
     <Label
       col="1"
       text="Groceries"></Label>
-    
+
     <!-- Wrap the image in a StackLayout to give it a bigger tap target -->
     <StackLayout
       col="2"
@@ -38,7 +38,7 @@
       col="1"
       [(ngModel)]="grocery"
       (loaded)="handleAndroidFocus(groceryTextField, container)"
-      [hint]="isAndroid ? 'ADD A GROCERY' : 'Add a grocery'"
+      [hint]="isAndroid ? 'ADD A GROCERY ITEM' : 'Add a grocery item'"
       returnKeyType="done"
       *ngIf="!isShowingRecent"
       (returnPress)="add('textfield')"></TextField>
